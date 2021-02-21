@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #495057;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* Navbar */
+header{
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px #E9ECEF;
+    border-bottom:2px solid #495057;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    width: 80%;
+    
+    
+}
+    /* Logo */
+    .logo a{
+        padding: .5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .logo a i{
+        margin: 0 1rem;
+    }
+    /* Menu */
+    .menu{
+        display: flex;
+    }
+    .menu li{
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+        margin: 0 1rem;
+    }
+    .menu li:hover{
+        box-shadow: 0 3px #2C7DA0;
+    }
+
+/* Banner */
+main{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+
+}
+.banner{
+    background-image: url("img/wheel.jpg");
+    background-color: #468FAF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    /* Apresentacao */
+    .apresentacao{
+        padding: 4rem 8rem;
+        text-shadow: 1px 1px #6C757D;
+    }
+    .apresentacao p,h1{
+        color: #FFF;
+    }
+    .apresentacao p{
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+    }
+    .apresentacao h1{
+        margin-bottom: 3rem;
+        font-size: 4rem;
+    }
+    
+    /* Github Btn */
+    .github{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.5rem;
+        width: 14rem;
+        background-color: #2C7DA0;
+        border-radius: 10px;
+        color: #FFF;
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 10rem;
+    }
+    .github i {
+        color: #FFF;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+/* Sobre Mim */
+.sobreMim{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    margin: auto;
+    margin: 4rem 0;
+}
+    /* Apresentacao */
+    .sobreMimApresentacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .sobreMimApresentacao h2{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .sobreMimApresentacao p{
+        font-size: 1.5rem;
+        margin:1rem 5rem;
+    }
+    
+    /* Foto */
+    .sobreMimCard{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: #DEE2E6;
+        border-radius: 2rem;
+    }
+    #minhaFoto,
+    .cardMention{
+        text-align: center;
+    }
+    #minhaFoto img{
+        border-radius: 100px ;
+        height: 20vh;
+        border: .5rem solid #468FAF;
+        margin: 1rem 0;
+        
+    }
+    .cardMention{
+        margin-bottom: 4rem;
+    }
+    .cardItems li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .cardItems li p{
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+    .cardItems li a{
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: .5rem;
+    }
+
+/* Conhecimentos */
+.conhecimentos{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+.linguagens{
+    flex:1;
+}
+.frameworks{
+    flex: 1;
+}
+.linguagensGrid{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.linguagensBlock{
+    background-color: #DEE2E6;
+    border-radius: 10px;
+}
+/* 
+*
+* Media Queries
+*
+*/
+@media(max-width: 1200px){
+    /* Navbar */
+    .navbar{
+        width: 95%;
+    }
+    .logo a{
+        font-size: 1.2rem;
+    }
+    .menu li{
+        padding:0;
+    }
+    
+    /* Sobre Mim */
+    .sobreMim{
+        margin: auto;
+        width: 95%;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width: 768px){
+    /* Banner */
+    .apresentacao{
+        padding: 4rem;
+    }
+}
+@media(max-width: 420px){
+    
+}

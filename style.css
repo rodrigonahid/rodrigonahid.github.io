@@ -20,6 +20,7 @@ header{
     position: fixed;
     width: 100%;
     transition: .6s;
+    background-color: blue;
 }
 .sticky{
     background-color: blue;
@@ -222,7 +223,7 @@ figure{
 .projetosBlock{
     text-align: center;
     background-color: #DEE2E6;
-    border-radius: 1rem;
+    border-radius: 6px;
     margin-bottom: 4rem;
 }
 .projetosBlock h3{
@@ -230,8 +231,12 @@ figure{
 }
 .projetosBlock img{
     height: 250px;
-    border-radius: .5rem;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 6px;
+    padding: 4px;
     
 }
 /* 
@@ -266,4 +271,9 @@ figure{
 }
 @media(max-width: 420px){
     
+}
+
+/* JS */
+.ativo {
+    background-color: #2C7DA0;
 }

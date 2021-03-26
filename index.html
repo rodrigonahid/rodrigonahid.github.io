@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
-    <header class="header">
+    <header class="header" >
         <div class="navbar">
             <div class="logo">
-                <a href="#"><i class="fas fa-terminal"></i>Rodrigo Nahid</a>
+                <a href="#" id="logoJs"><i class="fas fa-terminal" id="logoJs"></i>Rodrigo Nahid</a>
             </div>
             <nav>
                 <ul class="menu">
@@ -26,126 +26,95 @@
             </nav>
         </div>
     </header>
-    <figure class="banner">
-        <figcaption class="apresentacao">
-            <p>Olá, e bem-vindo ao meu</p>
-            <h1>Portfolio .</h1>
-            <div class="github">
-                <i class="fab fa-github"></i>
-                Follow me
-            </div>
-        </figcaption>
+    <figure class="banner" >
+        <div class="container">
+            <figcaption class="apresentacao">
+                <p>Olá, e bem-vindo ao meu</p>
+                <h1>Portfolio .</h1>
+                <div class="github">
+                    <i class="fab fa-github"></i>
+                    Follow me
+                </div>
+            </figcaption>
+        </div>
         
     </figure>
-    <section class="sobreMim" id="sobreMim">
-        <div class="sobreMimApresentacao">
-            <h2>Sobre mim</h2>
-            <p>Apaixonado por técnologia desde pequeno, sempre sonhei em trabalhar na área de informática.</p>
-            <p>Comecei a trilhar meu caminho na programação em 2020, quando percebi que era hora de parar de consumir tanta técnologia e começar a criar!</p>
-            <p>Hoje, dedico parte dos meus dias estudando e botando em prática meus conhecimentos em <strong>programação.</strong></p>
-        </div>
-        <div class="sobreMimCard">
-            <div id="minhaFoto">
-                <img src="img/me.jpeg" alt="Minha foto">
+    <div class="container">
+        <section class="sobreMimCard">
+            <div class="sobreMimList">
+                <h2>Sobre Mim</h2>
+                <p>Me chamo Rodrigo e desenvolvo aplicações front-end para web.</p>
+                <p>Curso Sistemas de Informação na faculdade UniFOA.</p>
+                <p>Trabalho como desenvolvedor front-end na <strong>Agência SEOX</strong>.</p>
             </div>
-            <div class="cardMention">
-                <h2>Rodrigo Nahid .</h2>
-                Programador Fullstack
+            <div class="sobreMimFoto">
+                <span class="fotoCirculo">
+                    <img src="img/me.jpeg" alt="Minha foto">
+                </span>
             </div>
-            <ul class="cardItems">
-                <li>
-                    <i class="fas fa-location-arrow"></i>
-                    <p>Desenvolvedor Junior:</p>
-                    <a href="https://www.seox.com.br" target="_blank">Agência SEOX;</a>
-                </li>
-                <li>
-                    <i class="fas fa-location-arrow"></i>
-                    <p>Idade:</p>
-                    <a href="#">20 anos;</a>
-                </li>
-                <li>
-                    <i class="fas fa-location-arrow"></i>
-                    <p>Usuário</p>
-                    <a href="#">Linux;</a>
-                </li>
-                <li>
-                    <i class="fas fa-location-arrow"></i>
-                    <p>Acesse meu</p>
-                    <a href="#">Github;</a>
-                </li>
-                <li>
-                    <i class="fas fa-location-arrow"></i>
-                    <p>Acesse meu</p>
-                    <a href="#">LinkedIn;</a>
-                </li>
-                <li>
-                    <i class="fas fa-location-arrow"></i>
-                    <p>Entre em</p>
-                    <a href="#">Contato;</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="conhecimentos js" id="conhecimentos">
-        <div class="linguagens" >
-            <h2>Linguagens</h2>
-            <div class="linguagensGrid">
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                </div>
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                </div>
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-js-square"></i>
-                    <h3>Javascript</h3>
-                </div>
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-python"></i>
-                    <h3>Python 3</h3>
-                </div>
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP 8</h3>
-                </div>
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-sass"></i>
-                    <h3>SASS</h3>
-                </div>
-            </div>
-        </div>
-        <div class="frameworks">
-            <h2>Frameworks</h2>
-            <div class="frameworksGrid">
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-wordpress-simple"></i>
-                    <h3>Wordpress</h3>
-                </div>
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-bootstrap"></i>
-                    <h3>Bootstrap</h3>
-                </div>
-                <div class="conhecimentosBlock">
-                    <i class="fab fa-vuejs"></i>
-                    <h3>Vue.js</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="projetos js" id="projetos">
-        <h2>Projetos pessoais</h2>
-        <div class="projetosGrid">
-            <div class="projetosBlock">
-                <h3>Nature template</h3>
-                <img src="img/projetoNature.png" alt="nature template">
-            </div>
-            <div class="projetosBlock">...</div>
-            <div class="projetosBlock">...</div>
-            <div class="projetosBlock">...</div>
-        </div>
+        </section>
     </div>
+    <section class="container">
+        <h2 class="tecnologias-title">Tecnologias</h2>
+        <div class="tecnologias">
+            <div class="tecnologias-block">
+                <div class="block-logo">
+                    LOGO
+                </div>
+                <div class="block-content">
+                    Tecnologia
+                </div>
+            </div>
+            <div class="tecnologias-block">
+                <div class="block-logo">
+                    LOGO
+                </div>
+                <div class="block-content">
+                    Tecnologia
+                </div>
+            </div>
+            <div class="tecnologias-block">
+                <div class="block-logo">
+                    LOGO
+                </div>
+                <div class="block-content">
+                    Tecnologia
+                </div>
+            </div>
+            <div class="tecnologias-block">
+                <div class="block-logo">
+                    LOGO
+                </div>
+                <div class="block-content">
+                    Tecnologia
+                </div>
+            </div>
+            <div class="tecnologias-block">
+                <div class="block-logo">
+                    LOGO
+                </div>
+                <div class="block-content">
+                    Tecnologia
+                </div>
+            </div>
+            <div class="tecnologias-block">
+                <div class="block-logo">
+                    LOGO
+                </div>
+                <div class="block-content">
+                    Tecnologia
+                </div>
+            </div>
+            <div class="tecnologias-block">
+                <div class="block-logo">
+                    LOGO
+                </div>
+                <div class="block-content">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>

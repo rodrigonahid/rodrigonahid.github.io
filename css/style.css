@@ -77,16 +77,13 @@ li{
 }
 
 /* Banner */
-figure{
-    height: 70vh;
-
-}
 .banner{
     background-image: url("../img/wheel.jpg");
     background-color: #468FAF;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 70vh;
 }
     /* Apresentacao */
     .apresentacao{
@@ -318,7 +315,10 @@ MEDIA QUERIES
     }
     /* Banner */
     .banner{
-        height: 60vh;
+        height: 80vh;
+    }
+    .apresentacao{
+        padding-top: 60px;
     }
     /* Skills */
     .modulo-skills{
@@ -403,8 +403,13 @@ MEDIA QUERIES
         padding: 30px 15px;
     }
 }
-@media(max-width: 420px){
-    
+@media(max-width: 330px){
+    .apresentacao h1{
+        font-size: 3rem;
+    }
+    .apresentacao p{
+        font-size: 1rem;
+    }
 }
 
 /* JS */

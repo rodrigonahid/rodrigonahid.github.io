@@ -82,7 +82,7 @@ figure{
 
 }
 .banner{
-    background-image: url("img/wheel.jpg");
+    background-image: url("../img/wheel.jpg");
     background-color: #468FAF;
     background-repeat: no-repeat;
     background-position: center;
@@ -318,9 +318,12 @@ MEDIA QUERIES
     }
     /* Banner */
     .banner{
-        height: 50vh;
+        height: 60vh;
     }
-    
+    /* Skills */
+    .modulo-skills{
+        margin-top: -100px;
+    }
     /* Sobre Mim */
     .sobreMim{
         margin: auto;
@@ -390,7 +393,6 @@ MEDIA QUERIES
     .skills-left{
         border: none;
         border-bottom: 1px solid #c5c3c6;
-        margin-top: ;
     }
     .skills-center{
         border: none;

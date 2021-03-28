@@ -1,0 +1,51 @@
+@import "style.css";
+
+.contato-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/contato.jpg");
+    background-color: #030303;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+.contato h2{ 
+    margin: 100px auto;
+    text-align: center;
+    max-width: 60%;
+
+}
+.contato-form{
+    display: flex;
+    justify-content: center;
+}
+.contato-form form{
+    display: inline-block;
+    width: 600px;
+}
+.form-top{
+    display: flex;
+}
+.form-top input{
+    width: 100%;
+}
+    .form-left{
+        flex:1;
+    }
+    .form-right{
+        flex: 1;
+    }
+.form-bottom textarea{
+    width: 100%;
+}
+.form-left,
+.form-right,
+.form-bottom{
+    margin: 20px;
+}
+
+.contato-form-btn{
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "nahid144z.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch assets/sass/style.scss:assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahid144z/nahid144z.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahid144z/nahid144z.github.io/issues"
+  },
+  "homepage": "https://github.com/nahid144z/nahid144z.github.io#readme"
+}

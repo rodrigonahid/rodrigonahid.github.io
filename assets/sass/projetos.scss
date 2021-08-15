@@ -20,23 +20,109 @@
     box-shadow: 0px 8px 35px rgb(132 146 166 / 15%);
 }
 .projetos-item{
+    margin: 0 -12px;
     margin-top: 40px;
     height: 300px;
     border-radius: 10px;
     display: flex;
+    &:nth-child(n+2){
+        flex-direction: row-reverse;
+    }
+    .projetos-item-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     &-content{
         width: 100%;
+        margin: 0 10px;
         background-color: #FFF;
-        padding: 16px 8px;
+        padding: 16px 12px;
         border-radius: 4px;
         box-shadow: 1px 4px 6px rgba(0,0,0,0.3);
+        h3{
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 120%;
+        }
+        .button{
+            margin-top: auto;
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 20px;
+            color: #FFF;
+            background-color: #2982C2;
+            transition: .2s;
+            &::after{
+                content: url(../img/arrow.svg);
+                position: relative;
+                top: 1.5px;
+                margin-left: 8px;
+            }
+            &:hover{
+                background-color: #2888B8;
+            }
+        }
+        
     }
     &-image{
-        margin-left: 20px;
+        margin: 0 10px;
         box-shadow: 1px 4px 6px rgba(0,0,0,0.3);
+        position: relative;
         img{
             width: 300px;
             height: 300px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: .1s;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover{
+                opacity: 1;
+                background-color: rgba(#FFF, 0.3);
+            }
+            &:active{
+                background-color: rgba(#FFF, 0.4);
+            }
+            img{
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+}
+.modal-tecnologia{
+    &-overlay{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.8);
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        transform: translate3d(0, 0, 10px);
+        transition: 2s;
+        img{
             border-radius: 4px;
         }
     }

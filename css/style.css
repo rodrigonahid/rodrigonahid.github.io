@@ -182,7 +182,9 @@ li{
     .sobreMimFoto img{
         border-radius: 112px ;
         height: 224px;
+        width: 224px;
         border: .5rem solid #468FAF;
+        object-fit: cover;
     }
     
 .tecnologias-title{
@@ -211,6 +213,9 @@ li{
 }
 .tecnologias-block .block-logo{
 margin-top: 20px;
+}
+.tecnologias-block .block-logo img{
+    height: 60px;
 }
 /* Projetos */
 .projetos{
